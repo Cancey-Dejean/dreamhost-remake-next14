@@ -44,8 +44,8 @@ export default function AnnouncementBar({
   const BeforeIcon = icons[iconName];
 
   return (
-    <div className="bg-primary text-white flex items-center px-8 py-3 text-base">
-      <div className="hidden w-full items-center gap-2 text-base leading-none lg:flex">
+    <div className="bg-primary text-white flex items-center justify-between px-8 py-3 text-xs md:text-base">
+      <div className="hidden items-center gap-2 text-base leading-none lg:flex">
         <div>
           <BeforeIcon className="text-xl" />
         </div>
@@ -65,27 +65,27 @@ export default function AnnouncementBar({
         )}
       </div>
 
-      <ul className="flex shrink-0 items-center gap-4">
-        {announcementBarMenu.map((item) => (
-          <li key={item.id}>
-            <Link className="text-white" href={item.url}>
-              {item.label}
-            </Link>
-          </li>
-        ))}
+      <div className="flex w-full items-center justify-between gap-2 lg:w-auto">
+        <ul className="flex items-center gap-4">
+          {announcementBarMenu.map((item) => (
+            <li key={item.id}>
+              <Link className="text-white" href={item.url}>
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-        <li>
-          <button
-            className="flex items-center gap-2"
-            onClick={() => alert("Language Dropdown")}
-          >
-            <span>
-              <BsGlobe2 />
-            </span>
-            English
-          </button>
-        </li>
-      </ul>
+        <button
+          className="flex items-center gap-2"
+          onClick={() => alert("Language Dropdown")}
+        >
+          <span>
+            <BsGlobe2 />
+          </span>
+          English
+        </button>
+      </div>
     </div>
   );
 }

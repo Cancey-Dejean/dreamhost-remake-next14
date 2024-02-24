@@ -55,14 +55,26 @@
 }
 
 body {
-  @apply font-body max-w-4k mx-auto flex h-screen flex-col;
+  @apply mx-auto flex h-screen max-w-4k flex-col font-body;
+}
+
+a {
+  @apply inline-block;
 }
 
 main {
-  @apply flex flex-1 flex-col;
+  @apply flex h-screen flex-1 flex-col;
+}
+
+section {
+  @apply p-2 lg:p-4;
 }
 
 @layer utilities {
+  .image-wrapper {
+    width: 100%;
+  }
+
   .text-balance {
     text-wrap: balance;
   }

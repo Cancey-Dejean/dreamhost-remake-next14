@@ -1,9 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { FaArrowRightLong, FaTags } from "react-icons/fa6";
 import { MainLogo } from "../icons";
+import { ButtonLink } from "..";
 
 const mainNav = [
   {
@@ -70,17 +70,17 @@ const Header = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="bg-white sticky top-0 z-50 w-full px-8 xl:py-4"
+      className="sticky top-0 z-50 w-full bg-white px-8 xl:py-4"
     >
       <div className="flex items-center">
-        <Link href="/">
+        <Link href="/" className="mr-4">
           <MainLogo />
         </Link>
 
         <nav className="flex-1">
           <ul className="flex items-center">
-            {mainNav.map((link) => (
-              <li key={link.id}>
+            {mainNav.map((link, i) => (
+              <li key={i}>
                 <Link href={link.href} className={navLinkStyle}>
                   {link.name}
                 </Link>
@@ -89,22 +89,17 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="item-center flex items-center">
-          {/* Secondary menu */}
-          <ul className="item-center flex items-center">
-            <li>
-              <Link href="/cart" className={navLinkStyle}>
-                Login
-              </Link>
-            </li>
-          </ul>
+        <div className="item-center flex items-center gap-3">
+          <ButtonLink
+            as="a"
+            size="medium"
+            label="Login"
+            href="#"
+            variant="default-ghost"
+            className=""
+          />
 
-          {/* CTA Row */}
-          <ul className="item-center flex items-center">
-            <li>
-              <Link href="/cart">CTA</Link>
-            </li>
-          </ul>
+          <ButtonLink as="a" size="medium" label="Get Started" href="#" />
         </div>
       </div>
     </motion.header>

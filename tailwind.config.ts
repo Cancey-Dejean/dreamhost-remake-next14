@@ -21,7 +21,18 @@ const config: Config = {
       transparent: "transparent",
       "gray-300": "#f7f9fa",
     },
-    extend: {},
+    gridTemplateColumns: {
+      "18": "repeat(18, minmax(0, 1fr))",
+      "20": "repeat(20, minmax(0, 1fr))",
+    },
+    extend: {
+      fontSize: {
+        "8xl": ["4rem", "125%"],
+        "9xl": ["4.5rem", "122%"],
+        "10xl": ["5rem", "125%"],
+        "11xl": ["5.5rem", "118%"],
+      },
+    },
   },
   plugins: [],
 };
