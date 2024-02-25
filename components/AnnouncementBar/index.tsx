@@ -6,6 +6,8 @@ import { BsGlobe2 } from "react-icons/bs";
 
 type AnnouncementBarProps = {
   linkableAnnouncement?: boolean;
+  announcementIcon?: "none" | "sale" | "arrowRight";
+  announcementText: string;
 };
 
 const announcementBarMenu = [
@@ -31,37 +33,45 @@ const announcementBarMenu = [
   },
 ];
 
-const icons = {
-  sale: LiaTagsSolid,
-  arrowRight: FaArrowRightLong,
-};
+// const icons = {
+//   sale: LiaTagsSolid,
+//   arrowRight: FaArrowRightLong,
+// };
 
 export default function AnnouncementBar({
+  announcementText,
   linkableAnnouncement,
+  announcementIcon,
 }: AnnouncementBarProps) {
-  const iconName = "sale"; // This can be dynamically set based on some logic
-
-  const BeforeIcon = icons[iconName];
+  const renderIcon = () => {
+    switch (announcementIcon) {
+      case "sale":
+        return <LiaTagsSolid className="text-xl" />;
+      case "arrowRight":
+        return <FaArrowRightLong />;
+      case "none":
+      default:
+        return null;
+    }
+  };
 
   return (
-    <div className="bg-primary text-white flex items-center justify-between px-8 py-3 text-xs md:text-base">
+    <div className="flex items-center justify-between bg-primary px-8 py-3 text-xs text-white md:text-base">
       <div className="hidden items-center gap-2 text-base leading-none lg:flex">
-        <div>
-          <BeforeIcon className="text-xl" />
-        </div>
+        {renderIcon()}
 
         {linkableAnnouncement ? (
           <Link
             href="/"
-            className="border-b-transparent hover:border-white flex items-center gap-2 border-b py-0.5   transition-all duration-300 ease-in-out"
+            className="flex items-center gap-2 border-b border-b-transparent py-0.5 transition-all   duration-300 ease-in-out hover:border-white"
           >
-            {`Announcement text goes here`}{" "}
+            {announcementText}
             <span>
               <FaArrowRightLong />
             </span>
           </Link>
         ) : (
-          <p>{`Announcement text goes here`}</p>
+          <p>{announcementText}</p>
         )}
       </div>
 

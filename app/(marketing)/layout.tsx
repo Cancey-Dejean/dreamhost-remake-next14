@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "../globals.css";
 import { AnnouncementBar, Footer, Header } from "@/components";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "DreamHost - Web Hosting, Domain Names, WordPress & More",
@@ -17,10 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main>
-          <AnnouncementBar linkableAnnouncement />
-          <Header />
-          {children}
-          <Footer />
+          <div>
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </main>
       </body>
     </html>
