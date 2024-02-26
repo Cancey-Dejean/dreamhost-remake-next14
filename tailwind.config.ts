@@ -15,22 +15,29 @@ const config: Config = {
       black: "var(--color-black)",
       white: "var(--color-white)",
       transparent: "transparent",
-      "gray-300": "#f7f9fa",
-      offwhite: "#f4f6f9",
+      "gray-300": "var(--color-gray-300)",
+      offwhite: "var(--color-offWhite)",
+      darkPurple: "var(--color-darkPurple)",
     },
     gridTemplateColumns: {
+      "16": "repeat(16, minmax(0, 1fr))",
       "18": "repeat(18, minmax(0, 1fr))",
       "20": "repeat(20, minmax(0, 1fr))",
     },
-    gridColumnEnd: {
-      "11": "11",
-      "20": "20",
-    },
+
     borderRadius: {
       16: "16px",
       32: "32px",
     },
     extend: {
+      gridColumn: {
+        "span-11": "span 11 / span 11",
+        "span-16": "span 16 / span 16",
+        "span-17": "span 17 / span 17",
+      },
+      gridColumnStart: {
+        10: "10",
+      },
       fontSize: {
         base: ["1rem", "1.5rem"],
         xl: ["1.25rem", "1.75rem"],
