@@ -20,6 +20,7 @@ const config: Config = {
       darkPurple: "var(--color-darkPurple)",
     },
     gridTemplateColumns: {
+      "2": "repeat(2,minmax(0,1fr))",
       "16": "repeat(16, minmax(0, 1fr))",
       "18": "repeat(18, minmax(0, 1fr))",
       "20": "repeat(20, minmax(0, 1fr))",
@@ -31,11 +32,13 @@ const config: Config = {
     },
     extend: {
       gridColumn: {
+        "span-8": "span 8 / span 8",
         "span-11": "span 11 / span 11",
         "span-16": "span 16 / span 16",
         "span-17": "span 17 / span 17",
       },
       gridColumnStart: {
+        8: "8",
         10: "10",
       },
       fontSize: {

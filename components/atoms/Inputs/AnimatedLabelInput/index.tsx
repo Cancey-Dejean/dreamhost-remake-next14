@@ -8,6 +8,7 @@ type InputProps = {
 export default function AnimatedLabelInput({
   type = "text",
   label,
+  ...rest
 }: InputProps) {
   const [value, setValue] = useState("");
 
@@ -22,8 +23,9 @@ export default function AnimatedLabelInput({
         type={type}
         value={value}
         onChange={handleChange}
+        {...rest}
       />
-      <label className={value && "filled"}>{label}</label>
+      <label className={value && "filled"}>{label || "Label"}</label>
     </div>
   );
 }

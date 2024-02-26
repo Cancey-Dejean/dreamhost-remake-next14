@@ -65,8 +65,16 @@ body {
   @apply mx-auto flex h-screen max-w-[3000px] flex-col font-body;
 }
 
+p {
+  @apply text-xl;
+}
+
 a {
   @apply inline-block;
+}
+
+section {
+  @apply p-8;
 }
 
 main {

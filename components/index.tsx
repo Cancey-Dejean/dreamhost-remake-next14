@@ -12,9 +12,13 @@ import Hero from "./Hero";
 import LatestDeals from "./LatestDeals";
 import FindDomain from "./FindDomain";
 import Footer from "./Footer";
+import CardDeal from "./Cards/CardDeal";
+import CardPerkPlan from "./Cards/CardPerkPlan";
+import HostingPlans from "./HostingPlans";
 
 // Molecules
-import CardDeal from "./Cards/CardDeal";
+import InputSubmit from "./InputSubmit";
+import DomainImageRow from "./DomainImageRow";
 
 export {
   AnnouncementBar,
@@ -26,6 +30,10 @@ export {
   Hero,
   LatestDeals,
   FindDomain,
+  DomainImageRow,
+  HostingPlans,
+  InputSubmit,
   SectionTitle,
   CardDeal,
+  CardPerkPlan,
 };

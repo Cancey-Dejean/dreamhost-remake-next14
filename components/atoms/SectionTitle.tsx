@@ -1,14 +1,20 @@
 import { cn } from "@/libs/utils";
 
+export type SectionTitleProps = {
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  children?: React.ReactNode;
+  text?: string;
+  className?: string;
+};
+
 export default function SectionTitle({
   as = "h1",
   children,
   className,
-}: {
-  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  children: React.ReactNode;
-  className?: string;
-}) {
+  text = "Title",
+}: SectionTitleProps) {
   const Element = as;
-  return <Element className={cn("font-bold", className)}>{children}</Element>;
+  return (
+    <Element className={cn("font-bold", className)}>{children || text}</Element>
+  );
 }

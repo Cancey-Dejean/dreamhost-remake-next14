@@ -1,4 +1,4 @@
-import { FindDomain, Hero, LatestDeals } from "@/components";
+import { FindDomain, Hero, HostingPlans, LatestDeals } from "@/components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Hero />
       <LatestDeals />
       <FindDomain />
+      <HostingPlans />
     </>
   );
 }

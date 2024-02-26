@@ -1,9 +1,8 @@
-import { CardDeal, Container, SectionTitle } from "@/components";
-import Link from "next/link";
+import { CardDeal, SectionTitle } from "@/components";
 
 export default function LatestDeals() {
   return (
-    <section className="px-0 py-16">
+    <section className="">
       <div className="section-grid">
         <div className="col-span-16 col-start-3">
           <SectionTitle

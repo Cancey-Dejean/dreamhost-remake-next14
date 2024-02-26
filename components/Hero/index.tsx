@@ -6,7 +6,7 @@ type HeroProps = {};
 
 export default function Hero({}: HeroProps) {
   return (
-    <section className="py-0">
+    <section className="">
       <div className="section-grid">
         <div className="col-span-9 col-start-3 self-center">
           {/* Text */}
