@@ -16,6 +16,7 @@ import Footer from "./Footer";
 import CardDeal from "./Cards/CardDeal";
 import CardSale from "./Cards/CardSale";
 import CardPerkPlan from "./Cards/CardPerkPlan";
+import CardHosting from "./Cards/CardHosting";
 import HostingPlans from "./HostingPlans";
 import FlashSale from "./FlashSale";
 import Offering from "./Offering";
@@ -43,6 +44,7 @@ export {
   CardDeal,
   CardSale,
   CardPerkPlan,
+  CardHosting,
   Offering,
   Hosting,
   Pill,

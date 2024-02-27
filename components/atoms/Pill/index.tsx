@@ -3,18 +3,21 @@ import React from "react";
 
 export type PillProps = {
   variant?: "primary" | "green";
+  className?: string;
+  text: string;
 };
 
-export default function Pill({ variant }: PillProps) {
+export default function Pill({ variant, className, text }: PillProps) {
   return (
     <p
       className={cn(
         "rounded-32 px-3 py-1 font-semibold uppercase leading-none",
         variant === "primary" && "bg-[#d6e5fb] text-primary",
-        variant === "green" && "text-green bg-[#d7f5ef]",
+        variant === "green" && "bg-[#d7f5ef] text-green",
+        className,
       )}
     >
-      FOR A LIMITED TIME ONLY
+      {text || "Sale"}
     </p>
   );
 }

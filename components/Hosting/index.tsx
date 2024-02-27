@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { Pill } from "..";
+import { CardHosting } from "@/components";
 
 export default function Hosting() {
   return (
     <section className="bg-black p-0">
       <div className="section-grid p-8">
-        <div className="col-end-19 relative z-20 col-span-9">
+        <div className="relative z-20 col-span-9 col-end-19">
           <div className="lg:max-w-[408px] xl:max-w-[818px]">
             <Image
               src="/images/offering_hosting2.jpg"
@@ -18,24 +18,52 @@ export default function Hosting() {
         </div>
       </div>
 
-      <div className="section-grid bg-black">
-        <div className="col-span-18 col-start-2 rounded-32  bg-offwhite p-16">
-          <div className="group relative flex flex-col items-start rounded-32 bg-white p-16 transition-shadow duration-300 hover:shadow-md">
-            <Pill variant="primary" />
-            <div>
-              <Image
-                src="/images/wp-hosting.svg"
-                width={60}
-                height={72}
-                alt=""
+      <div className="section-grid">
+        <div className="col-span-18 col-start-2 rounded-32 bg-offwhite p-16">
+          <div className="lg:grid-cols-3 grid gap-8">
+            <ul className="col-span-2 grid grid-cols-2 gap-8">
+              <CardHosting
+                linkableUrl="/"
+                linkableText="Starting at: $2.59/mo"
+                cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
               />
+              <CardHosting
+                linkableUrl="/"
+                linkableText="Starting at: $2.59/mo"
+                cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
+              />
+              <CardHosting
+                linkableUrl="/"
+                linkableText="Starting at: $169.00/mo"
+                cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
+              />
+              <CardHosting
+                linkableUrl="/"
+                linkableText="Starting at: $0.0075/hour"
+                cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
+              />
+            </ul>
 
-              <h3 className="mb-2 text-3xl xl:text-4xl">WordPress Hosting</h3>
-              <p className="text-base xl:text-lg">
-                Get up and running fast with WordPress. Optimized for
-                performance and preconfigured for easy maintenance.
-              </p>
+            <div className="relative grid items-stretch lg:col-span-1">
+              <CardHosting
+                linkableUrl="/"
+                cardHeadTitle="Managed Virtual Private Servers"
+                cardHeadDescription="Expect More From Your Website or App."
+                linkableText="Starting at: $10.00/mo"
+                cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
+              />
             </div>
+          </div>
+
+          <div className="mt-8">
+            <CardHosting
+              linkableUrl="/"
+              direction="horizontal"
+              cardHeadTitle="Managed Virtual Private Servers"
+              cardHeadDescription="Expect More From Your Website or App."
+              linkableText="Starting at: $10.00/mo"
+              cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
+            />
           </div>
         </div>
       </div>
