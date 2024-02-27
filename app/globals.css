@@ -47,6 +47,7 @@
   --color-offWhite: #f4f6f9;
   --color-gray-300: #f7f9fa;
   --color-darkPurple: #210e2e;
+  --color-green: #00caaa;
 }
 
 @media (prefers-color-scheme: dark) {

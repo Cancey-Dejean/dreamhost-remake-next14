@@ -12,6 +12,7 @@ const config: Config = {
     },
     colors: {
       primary: "var(--color-primary)",
+      green: "var(--color-green)",
       black: "var(--color-black)",
       white: "var(--color-white)",
       transparent: "transparent",
@@ -29,6 +30,7 @@ const config: Config = {
     borderRadius: {
       16: "16px",
       32: "32px",
+      full: "100%",
     },
     extend: {
       gridColumn: {
@@ -36,10 +38,14 @@ const config: Config = {
         "span-11": "span 11 / span 11",
         "span-16": "span 16 / span 16",
         "span-17": "span 17 / span 17",
+        "span-18": "span 18 / span 18",
       },
       gridColumnStart: {
         8: "8",
         10: "10",
+      },
+      gridColumnEnd: {
+        19: "19",
       },
       fontSize: {
         base: ["1rem", "1.5rem"],

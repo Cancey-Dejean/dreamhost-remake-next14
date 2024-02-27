@@ -44,13 +44,13 @@ export default function HostingPlans() {
               <ButtonLink
                 as="a"
                 href="/"
-                size="medium"
+                size="large"
                 label="See Our Hosting Plans"
                 className="mt-8"
               />
             </div>
 
-            <div className="grid-cols-2 col-span-8 col-start-8 grid gap-8">
+            <div className="col-span-8 col-start-8 grid grid-cols-2 gap-8">
               {perkPlans.map((item, index) => (
                 <CardPerkPlan
                   key={item.title}

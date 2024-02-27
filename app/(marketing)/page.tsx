@@ -1,4 +1,12 @@
-import { FindDomain, Hero, HostingPlans, LatestDeals } from "@/components";
+import {
+  FindDomain,
+  FlashSale,
+  Hero,
+  Hosting,
+  HostingPlans,
+  LatestDeals,
+  Offering,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +15,9 @@ export default function Home() {
       <LatestDeals />
       <FindDomain />
       <HostingPlans />
+      <FlashSale />
+      <Offering />
+      <Hosting />
     </>
   );
 }

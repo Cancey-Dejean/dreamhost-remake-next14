@@ -2,6 +2,7 @@
 import ButtonLink from "./atoms/ButtonLink/";
 import SectionTitle from "./atoms/SectionTitle";
 import Container from "./atoms/Container";
+import Pill from "./atoms/Pill";
 import AnimatedLabelInput from "./atoms/Inputs/AnimatedLabelInput";
 // Templates
 
@@ -13,8 +14,12 @@ import LatestDeals from "./LatestDeals";
 import FindDomain from "./FindDomain";
 import Footer from "./Footer";
 import CardDeal from "./Cards/CardDeal";
+import CardSale from "./Cards/CardSale";
 import CardPerkPlan from "./Cards/CardPerkPlan";
 import HostingPlans from "./HostingPlans";
+import FlashSale from "./FlashSale";
+import Offering from "./Offering";
+import Hosting from "./Hosting";
 
 // Molecules
 import InputSubmit from "./InputSubmit";
@@ -32,8 +37,13 @@ export {
   FindDomain,
   DomainImageRow,
   HostingPlans,
+  FlashSale,
   InputSubmit,
   SectionTitle,
   CardDeal,
+  CardSale,
   CardPerkPlan,
+  Offering,
+  Hosting,
+  Pill,
 };
