@@ -21,6 +21,7 @@ import HostingPlans from "./HostingPlans";
 import FlashSale from "./FlashSale";
 import Offering from "./Offering";
 import Hosting from "./Hosting";
+import WordressThemes from "./WordressThemes";
 
 // Molecules
 import InputSubmit from "./InputSubmit";
@@ -48,4 +49,5 @@ export {
   Offering,
   Hosting,
   Pill,
+  WordressThemes,
 };
