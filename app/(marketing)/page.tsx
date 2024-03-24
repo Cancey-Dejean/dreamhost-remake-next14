@@ -6,6 +6,7 @@ import {
   HostingPlans,
   LatestDeals,
   Offering,
+  Perks,
   WordressThemes,
 } from "@/components";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Offering />
       <Hosting />
       <WordressThemes />
+      <Perks />
     </>
   );
 }

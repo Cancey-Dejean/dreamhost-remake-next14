@@ -8,13 +8,10 @@ export type SectionTitleProps = {
 };
 
 export default function SectionTitle({
-  as = "h1",
+  as: Comp = "h1",
   children,
   className,
   text = "Title",
 }: SectionTitleProps) {
-  const Element = as;
-  return (
-    <Element className={cn("font-bold", className)}>{children || text}</Element>
-  );
+  return <Comp className={cn("font-bold", className)}>{children || text}</Comp>;
 }
