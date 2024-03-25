@@ -1,4 +1,5 @@
 import {
+  Banner,
   FindDomain,
   FlashSale,
   Hero,
@@ -22,6 +23,7 @@ export default function Home() {
       <Hosting />
       <WordressThemes />
       <Perks />
+      <Banner />
     </>
   );
 }

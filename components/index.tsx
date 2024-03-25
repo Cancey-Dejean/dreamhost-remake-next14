@@ -24,6 +24,7 @@ import Offering from "./Offering";
 import Hosting from "./Hosting";
 import WordressThemes from "./WordressThemes";
 import Perks from "./Perks";
+import Banner from "./Banner";
 
 // Molecules
 import InputSubmit from "./InputSubmit";
@@ -54,4 +55,5 @@ export {
   Pill,
   WordressThemes,
   Perks,
+  Banner,
 };

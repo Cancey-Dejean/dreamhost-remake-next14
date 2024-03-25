@@ -31,6 +31,7 @@ const config: Config = {
     borderRadius: {
       16: "16px",
       32: "32px",
+      64: "64px",
       full: "100%",
     },
     extend: {
