@@ -1,5 +1,6 @@
 import {
   Banner,
+  Faq,
   FindDomain,
   FlashSale,
   Hero,
@@ -26,6 +27,7 @@ export default function Home() {
       <Perks />
       <Banner />
       <TextCards />
+      <Faq />
     </>
   );
 }

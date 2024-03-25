@@ -27,6 +27,8 @@ import WordressThemes from "./WordressThemes";
 import Perks from "./Perks";
 import Banner from "./Banner";
 import TextCards from "./TextCards";
+import Faq from "./Faq";
+import FaqItem from "./Faq/FaqItem";
 
 // Molecules
 import InputSubmit from "./InputSubmit";
@@ -60,4 +62,6 @@ export {
   Perks,
   Banner,
   TextCards,
+  Faq,
+  FaqItem,
 };
