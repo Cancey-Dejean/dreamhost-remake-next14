@@ -9,7 +9,7 @@ export default function Banner() {
         <div className="relative col-span-18 col-start-2 h-[784px] w-[2205px]">
           <Image
             src="/images/hire_a_pro_d.jpg"
-            layout="fill"
+            fill={true}
             alt=""
             className="rounded-64 absolute inset-0 overflow-hidden object-cover"
           />
