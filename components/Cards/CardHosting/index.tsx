@@ -75,7 +75,7 @@ export default function CardHosting({
         >
           <SectionTitle
             as="h4"
-            className="mb-4 break-words text-4xl 2xl:text-6xl"
+            className="mb-4 break-words text-3xl 2xl:text-5xl"
           >
             {cardHeadTitle}
           </SectionTitle>
@@ -101,7 +101,7 @@ export default function CardHosting({
             </div>
           </div>
 
-          <SectionTitle as="h4" className="mb-4 text-3xl xl:text-4xl">
+          <SectionTitle as="h4" className="mb-4 text-3xl xl:text-3xl">
             {cardBodyTitle}
           </SectionTitle>
 

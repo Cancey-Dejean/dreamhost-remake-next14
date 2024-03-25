@@ -22,7 +22,7 @@ export default function FlashSale() {
               className="mb-8 h-8"
             />
 
-            <SectionTitle className="text-6xl xl:text-11xl">
+            <SectionTitle className="text-5xl xl:text-9xl">
               Hosting Flash <br /> Sale
             </SectionTitle>
 

@@ -15,7 +15,7 @@ export default function CardSale({ linkable, variant }: CardSaleProps) {
         <p className="text-base">Up to</p>
         <p
           className={cn(
-            "mb-4 text-8xl font-bold",
+            "mb-4 text-6xl font-bold",
             variant === "primary" && "text-primary",
             variant === "green" && "text-green",
           )}

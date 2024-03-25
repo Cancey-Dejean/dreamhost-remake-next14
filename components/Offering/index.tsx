@@ -7,13 +7,13 @@ export default function Offering() {
     <section className="bg-black py-2 text-white lg:py-24">
       <div className="section-grid">
         <div className="col-span-8 col-start-3">
-          <SectionTitle className="mb-12 text-4xl font-semibold xl:text-8xl">
+          <SectionTitle className="mb-12 text-3xl font-semibold xl:text-6xl">
             Offering Hosting
             <br />
             Services for Businesses of All Sizes
           </SectionTitle>
 
-          <div className="[&_em]:text-green text-2xl lg:max-w-[370px] xl:max-w-[500px]">
+          <div className="text-2xl lg:max-w-[370px] xl:max-w-[500px] [&_em]:text-green">
             No matter how small or large your business, DreamHost caters to
             individuals and groups alike for your <em>unique</em> hosting
             scenario.

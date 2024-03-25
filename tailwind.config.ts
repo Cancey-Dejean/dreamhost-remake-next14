@@ -34,6 +34,18 @@ const config: Config = {
       64: "64px",
       full: "100%",
     },
+    fontSize: {
+      base: ["1rem", "1.5rem"],
+      xl: ["1.25rem", "1.75rem"],
+      "2xl": ["1.5rem", "2rem"],
+      "3xl": ["2rem", "125%"],
+      "4xl": ["2.5rem", "125%"],
+      "5xl": ["3rem", "125%"],
+      "6xl": ["4rem", "125%"],
+      "7xl": ["4.5rem", "122%"],
+      "8xl": ["5rem", "120%"],
+      "9xl": ["5.5rem", "118%"],
+    },
     extend: {
       gridColumn: {
         "span-8": "span 8 / span 8",
@@ -48,18 +60,6 @@ const config: Config = {
       },
       gridColumnEnd: {
         19: "19",
-      },
-      fontSize: {
-        base: ["1rem", "1.5rem"],
-        xl: ["1.25rem", "1.75rem"],
-        "2xl": ["1.5rem", "2rem"],
-        "4xl": ["2rem", "125%"],
-        "5xl": ["2.5rem", "125%"],
-        "6xl": ["3rem", "125%"],
-        "8xl": ["4rem", "125%"],
-        "9xl": ["4.5rem", "122%"],
-        "10xl": ["5rem", "120%"],
-        "11xl": ["5.5rem", "118%"],
       },
     },
   },

@@ -15,6 +15,7 @@ import FindDomain from "./FindDomain";
 import Footer from "./Footer";
 import CardDeal from "./Cards/CardDeal";
 import CardSale from "./Cards/CardSale";
+import CardIcon from "./Cards/CardIcon";
 import CardPerk from "./Cards/CardPerk";
 import CardPerkPlan from "./Cards/CardPerkPlan";
 import CardHosting from "./Cards/CardHosting";
@@ -25,6 +26,7 @@ import Hosting from "./Hosting";
 import WordressThemes from "./WordressThemes";
 import Perks from "./Perks";
 import Banner from "./Banner";
+import TextCards from "./TextCards";
 
 // Molecules
 import InputSubmit from "./InputSubmit";
@@ -48,6 +50,7 @@ export {
   CardDeal,
   CardSale,
   CardPerk,
+  CardIcon,
   CardPerkPlan,
   CardHosting,
   Offering,
@@ -56,4 +59,5 @@ export {
   WordressThemes,
   Perks,
   Banner,
+  TextCards,
 };

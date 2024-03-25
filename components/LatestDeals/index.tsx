@@ -7,7 +7,7 @@ export default function LatestDeals() {
         <div className="col-span-16 col-start-3">
           <SectionTitle
             as="h2"
-            className="mb-4 text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
+            className="mb-4 text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl"
           >
             The Latest Deals from DreamHost. Save now!
           </SectionTitle>

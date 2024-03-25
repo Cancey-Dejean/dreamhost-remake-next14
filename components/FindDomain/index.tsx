@@ -75,7 +75,7 @@ export default function FindDomain() {
         </div>
 
         <div className="col-span-4 col-start-10 pl-16 pr-8">
-          <SectionTitle as="h3" className="text-8xl">
+          <SectionTitle as="h3" className="text-6xl">
             Find Your Perfect <br /> Domain Name
           </SectionTitle>
         </div>

@@ -49,11 +49,15 @@ export default function ButtonLink({
         size === "small" ? "px-4 py-[14px]" : "",
         size === "medium" ? "px-5 py-[18px]" : "",
         size === "large" ? "px-8 py-6" : "",
-        iconPositionRight ? "flex-row-reverse" : "flex-row",
       )}
       {...rest}
     >
-      <div className="flex items-center gap-2">
+      <div
+        className={cn(
+          "flex items-center gap-2",
+          iconPositionRight ? "flex-row-reverse" : "flex-row",
+        )}
+      >
         {icon && (
           <Image
             src={icon || "/images/play.svg"}

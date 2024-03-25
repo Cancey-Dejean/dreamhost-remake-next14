@@ -8,6 +8,7 @@ import {
   LatestDeals,
   Offering,
   Perks,
+  TextCards,
   WordressThemes,
 } from "@/components";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <WordressThemes />
       <Perks />
       <Banner />
+      <TextCards />
     </>
   );
 }

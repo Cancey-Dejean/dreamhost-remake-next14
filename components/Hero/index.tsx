@@ -17,7 +17,7 @@ export default function Hero({}: HeroProps) {
 
             <SectionTitle
               as="h1"
-              className="mb-8 text-6xl font-bold lg:text-9xl xl:text-10xl"
+              className="mb-8 text-5xl font-bold lg:text-7xl xl:text-8xl"
             >
               Web Hosting <br /> with Purpose
             </SectionTitle>

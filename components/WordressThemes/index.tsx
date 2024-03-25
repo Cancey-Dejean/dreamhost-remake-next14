@@ -10,7 +10,7 @@ export default function WordressThemes() {
           <div className="flex max-w-[805px] flex-col items-start">
             <SectionTitle
               as="h3"
-              className="mb-8 text-4xl lg:text-8xl xl:text-11xl"
+              className="mb-8 text-3xl lg:text-6xl xl:text-9xl"
             >
               Beautiful WordPress Themes
             </SectionTitle>

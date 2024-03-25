@@ -34,7 +34,7 @@ export default function HostingPlans() {
         <div className="rounded-32 bg-white py-16 shadow-lg xl:col-span-16 xl:col-start-3">
           <div className="grid grid-cols-16 items-center gap-8">
             <div className="col-span-5 col-start-2 flex flex-col items-start">
-              <SectionTitle className="mb-4 text-4xl lg:text-6xl xl:text-8xl">
+              <SectionTitle className="mb-4 text-3xl lg:text-5xl xl:text-6xl">
                 DreamHost Helps <br /> You Succeed
               </SectionTitle>
 

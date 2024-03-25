@@ -8,7 +8,7 @@ export default function Perks() {
     <section>
       <div className="section-grid">
         <div className="flex max-w-[605px] flex-col justify-center md:col-span-4 md:col-start-1 lg:col-span-8 lg:col-start-2 xl:col-span-8 xl:col-start-3">
-          <SectionTitle as="h2" className="text-11xl">
+          <SectionTitle as="h2" className="text-9xl">
             What Makes DreamHost So Different
           </SectionTitle>
           <p>

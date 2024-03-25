@@ -5,7 +5,7 @@ export default function CardPerk() {
   return (
     <div>
       <FaUsers className="mb-2 text-[60px] text-primary" />
-      <SectionTitle as="h3" className="text-4xl">
+      <SectionTitle as="h3" className="text-3xl">
         Employee Owned
       </SectionTitle>
       <p>
