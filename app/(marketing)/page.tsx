@@ -16,18 +16,17 @@ import {
 export default function Home() {
   return (
     <>
-      <Hero />
-      <LatestDeals />
-      <FindDomain />
-      <HostingPlans />
-      <FlashSale />
-      <Offering />
-      <Hosting />
-      <WordressThemes />
-      <Perks />
-      <Banner />
-      <TextCards />
-      <Faq />
+      {/* <Hero /> */}
+      {/* <LatestDeals /> */}
+      {/* <FindDomain /> */}
+      {/* <HostingPlans /> */}
+      {/* <FlashSale /> */}
+      {/* <Offering /> */}
+      {/* <WordressThemes /> */}
+      {/* <Perks /> */}
+      {/* <Banner /> */}
+      {/* <TextCards /> */}
+      {/* <Faq /> */}
     </>
   );
 }

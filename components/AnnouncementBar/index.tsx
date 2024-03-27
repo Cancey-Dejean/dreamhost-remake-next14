@@ -33,11 +33,6 @@ const announcementBarMenu = [
   },
 ];
 
-// const icons = {
-//   sale: LiaTagsSolid,
-//   arrowRight: FaArrowRightLong,
-// };
-
 export default function AnnouncementBar({
   announcementText,
   linkableAnnouncement,
@@ -56,7 +51,7 @@ export default function AnnouncementBar({
   };
 
   return (
-    <div className="flex items-center justify-between bg-primary px-8 py-3 text-xs text-white md:text-base">
+    <div className="text-xs flex items-center justify-between bg-primary px-8 py-2 text-white md:py-3 md:text-base">
       <div className="hidden items-center gap-2 text-base leading-none lg:flex">
         {renderIcon()}
 
@@ -79,7 +74,7 @@ export default function AnnouncementBar({
         <ul className="flex items-center gap-4">
           {announcementBarMenu.map((item) => (
             <li key={item.id}>
-              <Link className="text-white" href={item.url}>
+              <Link className="text-xs text-white md:text-base" href={item.url}>
                 {item.label}
               </Link>
             </li>

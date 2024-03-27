@@ -35,6 +35,7 @@ const config: Config = {
       full: "100%",
     },
     fontSize: {
+      xs: ["0.75rem", "0.75rem"],
       base: ["1rem", "1.5rem"],
       xl: ["1.25rem", "1.75rem"],
       "2xl": ["1.5rem", "2rem"],

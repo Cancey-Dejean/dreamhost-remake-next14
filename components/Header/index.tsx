@@ -71,7 +71,7 @@ const Header = () => {
         linkableAnnouncement
         announcementIcon="sale"
       />
-      <motion.header
+      {/* <motion.header
         variants={{
           visible: { y: 0 },
           hidden: { y: "-100%" },
@@ -90,7 +90,6 @@ const Header = () => {
               className="h-auto w-full max-w-[194px]"
               priority
             />
-            {/* <MainLogo /> */}
           </Link>
 
           <nav className="flex-1">
@@ -113,7 +112,7 @@ const Header = () => {
             <ButtonLink size="medium" as="a" label="Get Started" href="#" />
           </div>
         </div>
-      </motion.header>
+      </motion.header> */}
     </>
   );
 };

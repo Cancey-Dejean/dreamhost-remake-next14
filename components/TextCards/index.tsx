@@ -26,7 +26,6 @@ export default function TextCards() {
                 size="large"
                 className="mt-8"
                 label="Learn More"
-                icon="/images/arrow-short.svg"
                 iconPositionRight
                 href="#"
               />

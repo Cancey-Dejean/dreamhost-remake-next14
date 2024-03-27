@@ -3,7 +3,7 @@ import { ButtonLink, CardHosting } from "@/components";
 
 export default function Hosting() {
   return (
-    <section className="bg-black p-0 pb-32">
+    <section className="bg-black p-0 pb-32 lg:mt-[-240px]">
       <div className="section-grid p-8">
         <div className="relative z-20 col-span-9 col-end-19">
           <div className="lg:max-w-[408px] xl:max-w-[818px]">
