@@ -33,27 +33,24 @@ const announcementBarMenu = [
   },
 ];
 
+const Icons = {
+  sale: <LiaTagsSolid className="text-xl" />,
+  arrowRight: <FaArrowRightLong />,
+  none: null,
+};
+
 export default function AnnouncementBar({
   announcementText,
   linkableAnnouncement,
-  announcementIcon,
+  announcementIcon = "none",
 }: AnnouncementBarProps) {
-  const renderIcon = () => {
-    switch (announcementIcon) {
-      case "sale":
-        return <LiaTagsSolid className="text-xl" />;
-      case "arrowRight":
-        return <FaArrowRightLong />;
-      case "none":
-      default:
-        return null;
-    }
-  };
-
   return (
-    <div className="text-xs flex items-center justify-between bg-primary px-8 py-2 text-white md:py-3 md:text-base">
+    <div className="flex items-center justify-between bg-primary px-8 py-2 text-xs text-white md:py-3 md:text-base">
       <div className="hidden items-center gap-2 text-base leading-none lg:flex">
-        {renderIcon()}
+        {/* Render selected icon */}
+        {announcementIcon !== "none" && (
+          <span className="mr-2">{Icons[announcementIcon]}</span>
+        )}
 
         {linkableAnnouncement ? (
           <Link

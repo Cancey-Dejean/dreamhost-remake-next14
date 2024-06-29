@@ -69,7 +69,7 @@ const Header = () => {
       <AnnouncementBar
         announcementText="Hosting Flash Sale: Starting at $2.59/mo for a limited time"
         linkableAnnouncement
-        announcementIcon="sale"
+        announcementIcon="none"
       />
       {/* <motion.header
         variants={{
