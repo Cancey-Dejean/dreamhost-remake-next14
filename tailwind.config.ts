@@ -50,6 +50,7 @@ const config: Config = {
     extend: {
       gridColumn: {
         "span-8": "span 8 / span 8",
+        "span-10": "span 10 / span 10",
         "span-11": "span 11 / span 11",
         "span-16": "span 16 / span 16",
         "span-17": "span 17 / span 17",

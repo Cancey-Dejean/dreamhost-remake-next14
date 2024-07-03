@@ -3,6 +3,7 @@ import Link from "next/link";
 import { LiaTagsSolid } from "react-icons/lia";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { BsGlobe2 } from "react-icons/bs";
+import Select from "../Select";
 
 type AnnouncementBarProps = {
   linkableAnnouncement?: boolean;
@@ -78,15 +79,10 @@ export default function AnnouncementBar({
           ))}
         </ul>
 
-        <button
-          className="flex items-center gap-2"
-          onClick={() => alert("Language Dropdown")}
-        >
-          <span>
-            <BsGlobe2 />
-          </span>
-          English
-        </button>
+        <div className="flex items-center gap-2">
+          <BsGlobe2 />
+          <Select />
+        </div>
       </div>
     </div>
   );

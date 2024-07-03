@@ -3,7 +3,7 @@ import FaqItem from "./FaqItem";
 
 export default function Faq() {
   return (
-    <section>
+    <section className="py-24">
       <div className="section-grid">
         <div className="col-span-16 col-start-3">
           <div className="grid grid-cols-16 gap-8">
@@ -13,7 +13,7 @@ export default function Faq() {
               </SectionTitle>
             </div>
 
-            <div className="col-span-9 col-start-7">
+            <div className="col-span-10 col-start-7">
               <FaqItem />
               <FaqItem />
               <FaqItem />

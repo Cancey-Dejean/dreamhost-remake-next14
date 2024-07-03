@@ -13,16 +13,15 @@ export default function Select() {
     startTransition(() => {
       router.replace(`/${locale}`);
     });
-    console.log(e.target.value);
   };
   return (
     <div>
       <label>
-        change Language
         <select
           defaultValue={activeLocale}
           onChange={onSelectChange}
           disabled={isPending}
+          className="bg-transparent"
         >
           <option value="en">English</option>
           <option value="id">Indonesia</option>

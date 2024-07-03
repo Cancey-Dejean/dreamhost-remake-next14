@@ -20,20 +20,19 @@ export default function Home() {
   const t = useTranslations("Index");
   return (
     <>
-      <h1>{t("title")}</h1>
-      <Select />
+      {/* <h1>{t("title")}</h1> */}
 
-      {/* <Hero /> */}
-      {/* <LatestDeals /> */}
-      {/* <FindDomain /> */}
-      {/* <HostingPlans /> */}
-      {/* <FlashSale /> */}
-      {/* <Offering /> */}
-      {/* <WordressThemes /> */}
-      {/* <Perks /> */}
-      {/* <Banner /> */}
-      {/* <TextCards /> */}
-      {/* <Faq /> */}
+      <Hero />
+      <LatestDeals />
+      <FindDomain />
+      <HostingPlans />
+      <FlashSale />
+      <Offering />
+      <WordressThemes />
+      <Perks />
+      <Banner />
+      <TextCards />
+      <Faq />
     </>
   );
 }

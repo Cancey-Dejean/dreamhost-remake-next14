@@ -23,6 +23,7 @@ export default function Hosting() {
           <div className="grid gap-8 lg:grid-cols-3">
             <ul className="col-span-2 grid grid-cols-2 gap-8">
               <CardHosting
+                pillText="Most Popular"
                 linkableUrl="/"
                 linkableText="Starting at: $2.59/mo"
                 cardBodyDescription="Fast web servers to run your applications with root access and a 100% Uptime Guarantee."
@@ -46,6 +47,7 @@ export default function Hosting() {
 
             <div className="relative grid items-stretch lg:col-span-1">
               <CardHosting
+                pillText="ON SALE: $10.00/MONTH"
                 linkableUrl="/"
                 cardHeadTitle="Managed Virtual Private Servers"
                 cardHeadDescription="Expect More From Your Website or App."

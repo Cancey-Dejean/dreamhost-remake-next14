@@ -1,13 +1,11 @@
 import { Pill, SectionTitle } from "@/components";
 import { cn } from "@/libs/utils";
-import { dir } from "console";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
 export type CardHostingProps = {
   url?: string;
-  showPill?: boolean;
   pillText?: string;
   cornerImgSrc?: string;
   cardHeadTitle?: string;
@@ -21,7 +19,7 @@ export type CardHostingProps = {
 };
 
 export default function CardHosting({
-  showPill = false,
+  pillText,
   cornerImgSrc,
   cardHeadTitle,
   cardHeadDescription,
@@ -42,9 +40,13 @@ export default function CardHosting({
         className,
       )}
     >
-      {/* ShowPill */}
-      {showPill && (
-        <Pill variant="primary" className="absolute -top-3 right-16" />
+      {/* Pill Text */}
+      {pillText && (
+        <Pill
+          text={pillText}
+          variant="primary"
+          className="absolute -top-3 right-16 text-base"
+        />
       )}
 
       {/* Corner Image */}
@@ -106,7 +108,7 @@ export default function CardHosting({
           </SectionTitle>
 
           {cardBodyDescription && (
-            <p className="text-base xl:text-lg">{cardBodyDescription}</p>
+            <p className="xl:text-lg text-base">{cardBodyDescription}</p>
           )}
 
           {linkableText && (

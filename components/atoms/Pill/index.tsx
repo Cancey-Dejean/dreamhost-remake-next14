@@ -1,5 +1,4 @@
 import { cn } from "@/libs/utils";
-import React from "react";
 
 export type PillProps = {
   variant?: "primary" | "green";
