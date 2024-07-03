@@ -41,13 +41,14 @@
 
   --font-body: "Gilroy";
 
-  --color-primary: #0073ec;
-  --color-black: #000;
-  --color-white: #fff;
-  --color-offWhite: #f4f6f9;
-  --color-gray-300: #f7f9fa;
-  --color-darkPurple: #210e2e;
-  --color-green: #00caaa;
+  --primary: #0073ec;
+  --black: #000;
+  --white: #fff;
+  --offWhite: #f4f6f9;
+  --gray-300: #f7f9fa;
+  --purple-500: #a644e5;
+  --purple-900: #210e2e;
+  --green: #00caaa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,7 +72,7 @@ p {
 }
 
 a {
-  @apply inline-block;
+  @apply inline-block hover:underline;
 }
 
 section {

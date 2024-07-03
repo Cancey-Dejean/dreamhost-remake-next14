@@ -12,7 +12,6 @@ import {
   TextCards,
   WordressThemes,
 } from "@/components";
-import Select from "@/components/Select";
 
 import { useTranslations } from "next-intl";
 

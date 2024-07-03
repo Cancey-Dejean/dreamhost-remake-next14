@@ -11,13 +11,15 @@ export type ButtonLinkProps = {
     | "primary-text"
     | "primary-ghost"
     | "default-ghost"
-    | "inverted-ghost";
+    | "inverted-ghost"
+    | string;
   icon?: string;
   iconPositionRight?: boolean;
   showLinkArrow?: boolean;
-  size: "small" | "medium" | "large";
+  size: "small" | "medium" | "large" | string;
   className?: string;
-  label?: React.ReactNode;
+  url?: string;
+  label?: string;
 } & AnchorHTMLAttributes<HTMLAnchorElement> &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -25,6 +27,7 @@ export default function ButtonLink({
   as = "a",
   variant = "primary-solid",
   size,
+  url = "#",
   label,
   showLinkArrow,
   icon,
@@ -36,13 +39,13 @@ export default function ButtonLink({
   return (
     <Element
       className={cn(
-        "flex items-center justify-center gap-4 rounded-16 border-4 border-transparent bg-transparent text-xl/[1.25rem] font-bold capitalize leading-[1]",
+        "flex items-center justify-center gap-4 rounded-16 border-4 border-transparent bg-transparent text-xl/[1.25rem] font-bold capitalize leading-[1] hover:no-underline",
         className,
         variant === "primary-solid"
           ? "border-primary bg-primary text-white"
           : "",
         variant === "primary-text"
-          ? "border-transparent bg-transparent text-primary"
+          ? "border-transparent bg-transparent text-primary hover:underline"
           : "",
         variant === "inverted-ghost" ? "border-white text-white" : "",
         variant === "default-ghost" ? "border-black" : "",
@@ -51,6 +54,7 @@ export default function ButtonLink({
         size === "large" ? "px-8 py-6" : "",
       )}
       {...rest}
+      href={url}
     >
       <div
         className={cn(

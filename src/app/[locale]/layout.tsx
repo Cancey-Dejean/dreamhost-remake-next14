@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AnnouncementBar, Footer, Header } from "@/components";
+import { Header, Footer } from "@/components";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "./globals.css";
@@ -26,7 +26,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <main>
             <div>
-              <Header />
+              <Header logo="/images/logo.svg" />
               {children}
               <Footer />
             </div>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
 export default function CardIcon() {

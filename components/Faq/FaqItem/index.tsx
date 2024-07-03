@@ -23,7 +23,7 @@ export default function FaqItem() {
         {/* Change icon based on state */}
       </button>
       {/* Toggle class based on isOpen state to show/hide content */}
-      <div className={`${isOpen ? "block" : "hidden"}`}>
+      <div className={`${isOpen ? "block pt-10" : "hidden"}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi
         doloribus autem asperiores distinctio inventore animi officiis, amet
         aspernatur! Illum.

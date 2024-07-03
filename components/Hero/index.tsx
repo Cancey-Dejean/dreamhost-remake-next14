@@ -1,18 +1,31 @@
 import Image from "next/image";
-import React from "react";
 import { ButtonLink, SectionTitle } from "@/components";
 
-type HeroProps = {};
+const ctaButtons = [
+  {
+    size: "large",
+    label: "Get Started",
+    url: "#",
+    variant: "primary-solid",
+  },
+  {
+    size: "small",
+    label: "More than a website",
+    url: "#",
+    variant: "primary-text",
+    icon: "/images/play.svg",
+  },
+];
 
-export default function Hero({}: HeroProps) {
+export default function Hero({ topTitle }: { topTitle?: string }) {
   return (
-    <section className="">
+    <section>
       <div className="section-grid">
         <div className="col-span-9 col-start-3 self-center">
           {/* Text */}
           <div className="flex flex-col">
-            <p className="mb-4 text-base font-semibold text-primary">
-              MEET DREAMHOST
+            <p className="mb-4 text-base font-semibold uppercase text-primary">
+              {topTitle || "MEET DREAMHOST"}
             </p>
 
             <SectionTitle
@@ -29,29 +42,26 @@ export default function Hero({}: HeroProps) {
 
             {/* CTA */}
             <div className="mt-8 flex items-center gap-4">
-              <ButtonLink as="a" size="large" label="Get Started" href="#" />
-              <ButtonLink
-                as="a"
-                size="small"
-                label="More than a website"
-                href="#"
-                variant="primary-text"
-                icon="/images/play.svg"
-                className="link-underline"
-              />
+              {ctaButtons.map(({ size, label, url, variant, icon }) => (
+                <ButtonLink
+                  key={label}
+                  as="a"
+                  size={size}
+                  label={label}
+                  href={url}
+                  variant={variant}
+                  icon={icon}
+                />
+              ))}
             </div>
           </div>
         </div>
 
+        {/* Image */}
         <div className="col-span-6 col-start-[13]">
-          {/* Image */}
-          <Image
-            src={"/images/hero-girl.png"}
-            className="h-auto w-full max-w-[760px] object-contain"
-            width={600}
-            height={586}
-            alt=""
-          />
+          <div className="relative h-[586px] w-[600px]">
+            <Image src={"/images/hero-girl.png"} fill alt="" />
+          </div>
         </div>
       </div>
     </section>

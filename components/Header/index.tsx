@@ -2,54 +2,17 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { MainLogo } from "../icons";
 import ButtonLink from "@/components/atoms/ButtonLink";
 import Image from "next/image";
 import { AnnouncementBar } from "@/components";
+import { mainNav } from "@/constants";
 
-const mainNav = [
-  {
-    id: 1,
-    name: "WordPress",
-    href: "#wordpress",
-  },
-  {
-    id: 2,
-    name: "Hosting",
-    href: "#hosting",
-  },
-  {
-    id: 3,
-    name: "Websites",
-    href: "#websites",
-  },
-  {
-    name: "Domains",
-    href: "/domains",
-  },
-  {
-    id: 4,
-    name: "Email",
-    href: "/email",
-  },
-  {
-    id: 5,
-    name: "Pro Services",
-    href: "#pro-services",
-  },
-  {
-    id: 6,
-    name: "blog",
-    href: "/blog",
-  },
-];
-
-const Header = () => {
+const Header = ({ logo, logoAlt }: { logo?: string; logoAlt?: string }) => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
   const navLinkStyle =
-    "text-black/90 text-xl font-medium capitalize px-5 py-3 bg-transparent hover:bg-gray-300 transition-colors duration-300 ease-in-out rounded-full";
+    "text-black/90 text-xl font-medium capitalize px-5 py-3 bg-transparent hover:bg-gray-300 transition-colors duration-300 ease-in-out rounded-16";
 
   // Hide header on scroll down
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -68,10 +31,10 @@ const Header = () => {
     <>
       <AnnouncementBar
         announcementText="Hosting Flash Sale: Starting at $2.59/mo for a limited time"
-        linkableAnnouncement
-        announcementIcon="none"
+        announcementIcon="sale"
+        url="/"
       />
-      {/* <motion.header
+      <motion.header
         variants={{
           visible: { y: 0 },
           hidden: { y: "-100%" },
@@ -82,22 +45,23 @@ const Header = () => {
       >
         <div className="flex items-center">
           <Link href="/" className="mr-4">
-            <Image
-              src="/images/logo.svg"
-              alt="DreamHost"
-              width={194}
-              height={36}
-              className="h-auto w-full max-w-[194px]"
-              priority
-            />
+            <div className="relative h-[36px] w-[194px]">
+              <Image
+                fill
+                src={logo || "/logo.svg"}
+                alt={logoAlt || "Lia Logo"}
+                className="h-auto w-full max-w-[194px]"
+                priority
+              />
+            </div>
           </Link>
 
           <nav className="flex-1">
             <ul className="flex items-center">
-              {mainNav.map((link, i) => (
+              {mainNav.map(({ url, label }, i) => (
                 <li key={i}>
-                  <Link href={link.href} className={navLinkStyle}>
-                    {link.name}
+                  <Link href={url} className={navLinkStyle}>
+                    {label}
                   </Link>
                 </li>
               ))}
@@ -112,7 +76,7 @@ const Header = () => {
             <ButtonLink size="medium" as="a" label="Get Started" href="#" />
           </div>
         </div>
-      </motion.header> */}
+      </motion.header>
     </>
   );
 };

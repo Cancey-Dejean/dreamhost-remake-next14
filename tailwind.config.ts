@@ -11,14 +11,19 @@ const config: Config = {
       body: ["var(--font-body)", "sans-serif"],
     },
     colors: {
-      primary: "var(--color-primary)",
-      green: "var(--color-green)",
-      black: "var(--color-black)",
-      white: "var(--color-white)",
+      primary: "var(--primary)",
+
+      green: "var(--green)",
+      black: "var(--black)",
+      white: "var(--white)",
       transparent: "transparent",
-      "gray-300": "var(--color-gray-300)",
-      offwhite: "var(--color-offWhite)",
-      darkPurple: "var(--color-darkPurple)",
+      "gray-300": "var(--gray-300)",
+      offwhite: "var(--offWhite)",
+      darkPurple: "var(--darkPurple)",
+      purple: {
+        DEFAULT: "var(--purple-500)",
+        900: "var(--purple-900)",
+      },
     },
     gridTemplateColumns: {
       "2": "repeat(2,minmax(0,1fr))",

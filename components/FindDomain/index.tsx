@@ -53,7 +53,7 @@ const domainImages = [
 export default function FindDomain() {
   return (
     <section className="text-white">
-      <div className="col-span-full col-start-2 grid grid-cols-16 rounded-32 bg-darkPurple px-8 py-20">
+      <div className="bg-purple-900 col-span-full col-start-2 grid grid-cols-16 rounded-32 px-8 py-20">
         <div className="col-span-9 col-start-1 ml-8 self-center">
           <InputSubmit label="Find your perfect domain name..." />
 
